@@ -33,7 +33,13 @@
                         <button type="submit" class="btn btn-dark">Signup</button>
                     </div>
                 </form>
+                
+                <div class="container signin">
+                    <p>Already have an account? <a href="<?php echo base_url('/signin');?>">Login</a></p>
+                </div>
+
             </div>
+            
         </div>
     </div>
 </body>

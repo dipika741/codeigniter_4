@@ -30,6 +30,11 @@
                          <button type="submit" class="btn btn-success">Signin</button>
                     </div>     
                 </form>
+                
+                <div class="container signin">
+                    <p>Don't have an account yet? <a href="<?php echo base_url('/signup');?>">sign up</a></p>
+                </div>
+
             </div>
               
         </div>
