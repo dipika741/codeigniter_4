@@ -18,3 +18,12 @@ $routes->match(['get', 'post'], 'SigninController/loginAuth', 'SigninController:
 $routes->get('/signin', 'SigninController::index');
 $routes->get('/profile', 'ProfileController::index',['filter' => 'authGuard']);
 $routes->get('/logout', 'ProfileController::logout');
+
+
+// CRUD RESTful Routes
+$routes->get('users-list', 'UserCrud::index');
+$routes->get('user-form', 'UserCrud::create');
+$routes->post('submit-form', 'UserCrud::store');
+$routes->get('edit-view/(:num)', 'UserCrud::singleUser/$1');
+$routes->post('update', 'UserCrud::update');
+$routes->get('delete/(:num)', 'UserCrud::delete/$1');
